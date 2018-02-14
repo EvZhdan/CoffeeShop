@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:layout_margin="16dp">
+
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+        <EditText
+            android:id="@+id/enterYourName"
+            android:paddingBottom="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="@string/edit_text"
+            android:inputType="textMultiLine"/>
+        <CheckBox
+            android:id="@+id/wipped_cream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="24dp"
+            android:text="@string/whipped_cream"
+            android:textSize="24dp"
+
+            />
+        <CheckBox
+            android:id="@+id/choco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="24dp"
+            android:text="@string/chocolate"
+            android:textSize="24dp"
+            />
+
+    <TextView
+        style="@style/MyStyle"
+        android:text="@string/quantity"
+ />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="left">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="minusCups"
+            android:text="-"/>
+        <TextView
+            android:id="@+id/amount_of_coffee"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="2"/>
+        <Button
+            android:onClick="plusCups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/price"
+        style="@style/MyStyle"
+        android:text="price"
+/>
+
+    <Button
+        android:onClick="orderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Order"/>
+
+
+    <TextView
+        android:id="@+id/your_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_gravity="left"
+        android:textAllCaps="true"/>
+
+</LinearLayout>
+    </ScrollView>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CoffeeShop</string>
+    <string name="quantity">quantity</string>
+    <string name="whipped_cream">Whipped cream</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="edit_text">Enter your name</string>
+</resources>
